@@ -1,0 +1,5 @@
+name: income-prediction-env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
