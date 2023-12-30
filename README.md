@@ -63,4 +63,4 @@ The following steps outline the project's progression:
 
 This project aims to provide a robust predictive model for income levels, contributing to informed decision-making and effective resource allocation. The structured approach involves thorough data exploration, preprocessing, and model training. The use of the United States Census Bureau data adds a significant real-world context to the predictive analysis. The results obtained from this project will be instrumental in presenting valuable insights to stakeholders and informing strategic initiatives.
 
-For any inquiries or collaboration opportunities, please contact [your-email@example.com].
+For any inquiries or collaboration opportunities, please contact shima.rashidi7@gmail.com.
