@@ -67,9 +67,10 @@ Jupyter notebooks for stakeholder presentation can be found as:
 
 python scripts to run the code end to end under **`src/`:**.
 - **`src/train_and_evaluate.py`:** the python script to run the train and evaluation end to end and save model as a pkl file
-- **`src/predict.py`:** the python script to run the prediction end to end and save results under **`results/`:**.
    ```bash
    python src/train_and_evaluate.py
+- **`src/predict.py`:** the python script to run the prediction end to end and save results under **`results/`:**.
+   ```bash
    python src/predict.py
 
    
