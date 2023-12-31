@@ -54,3 +54,10 @@ if __name__ == "__main__":
     # Save model and results   
     with open('../results/model.pkl', 'wb') as file:
         pickle.dump(model, file)
+        
+    X_test['income'] = y_test
+    X_test['preds'] = y_pred
+    X.to_csv('../results/test_preds.csv', index=False)
+    
+    with open('../results/test_classification_report.txt', 'w') as output_file:
+        output_file.write(str(classification_report(y_test, y_pred)))
