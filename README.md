@@ -8,6 +8,17 @@ This repository contains the code and documentation for a data science project f
 
 ## Project Description
 
+### Steps
+
+The following steps outline the project's progression:
+
+0. **Exploratory Data Analysis:** Understand the dataset through visualizations and statistical analysis.
+1. **Data Preprocessing:** Handle anomalies and missing values.
+2. **Feature Engineering:** Optimize input variables for model training.
+3. **Model Selection:** Choose suitable algorithms for binary classification.
+4. **Training and Evaluation:** Train models and evaluate performance using appropriate metrics.
+5. **Stakeholder Presentation:** Prepare and deliver results for a stakeholder presentation.
+
 ### Dataset
 
 The dataset utilized in this project is modeled after the UCI/ADULT database. The target variable, representing income levels, has been binned at the $50,000 threshold. Notably, the goal field is derived from the "total person income," differing from the original ADULT database, which may influence its behavior.
@@ -57,18 +68,36 @@ Jupyter notebooks for stakeholder presentation can be found as:
 python scripts to run the code end to end under **`src/`:**.
 - **`src/train_and_evaluate.py`:** the python script to run the train and evaluation end to end and save model as a pkl file
 - **`src/predict.py`:** the python script to run the prediction end to end and save results under **`results/`:**.
+   ```bash
+   python src/train_and_evaluate.py
+   python src/predict.py
 
+   
 Config file which contains results from the eda step can be found under **`src/config.json`:**.
-## Next Steps
 
-The following steps outline the project's progression:
+### Results
 
-0. **Exploratory Data Analysis:** Understand the dataset through visualizations and statistical analysis.
-1. **Data Preprocessing:** Handle anomalies and missing values.
-2. **Feature Engineering:** Optimize input variables for model training.
-3. **Model Selection:** Choose suitable algorithms for binary classification.
-4. **Training and Evaluation:** Train models and evaluate performance using appropriate metrics.
-5. **Stakeholder Presentation:** Prepare and deliver results for a stakeholder presentation.
+## Classification Report on test set
+
+|               | Precision | Recall  | F1-Score | Support |
+|--------------:|-----------|---------|----------|---------|
+|      **0**     |   0.98    |   0.92  |   0.95   |  15605  |
+|      **1**     |   0.34    |   0.67  |   0.45   |   1013  |
+| **Accuracy**   |           |         |   0.90   |  16618  |
+| **Macro Avg**  |   0.66    |   0.79  |   0.70   |  16618  |
+|**Weighted Avg**|   0.94    |   0.90  |   0.92   |  16618  |
+
+
+## Classification Report on validation set:
+
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+|      0      |   0.98    |  0.92  |   0.95   | 153,443 |
+|      1      |   0.35    |  0.68  |   0.46   |  10,030 |
+|-------------|-----------|--------|----------|---------|
+|  **Accuracy**  |           |        |   0.90   | 163,473 |
+| **Macro Avg**  |   0.66    |  0.80  |   0.70   | 163,473 |
+|**Weighted Avg**|   0.94    |  0.90  |   0.92   | 163,473 |
 
 ## Conclusion
 
