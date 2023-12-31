@@ -1,0 +1,7 @@
+{
+"train_file_path" : "../data/census_income_learn.csv",
+"val_file_path" : "../data/census_income_learn.csv",
+"numerical_features" : ["age", "instance weight", "num persons worked for employer", "weeks worked in year"],
+"cols2drop" : ["migration code-change in msa", "migration code-change in reg", "migration code-move within reg","migration prev res in sunbelt", "class of worker","enroll in edu inst last wk", "major industry code","major occupation code", "member of a labor union", "reason for unemployment","region of previous residence", "state of previous residence", "live in this house 1 year ago", "migration prev res in sunbelt", "family members under 18", "fill inc questionnaire for veteran's admin", "capital gains", "capital losses", "wage per hour", "dividends from stocks"],
+"unknown_values" : ["?", "not in universe"]
+}
