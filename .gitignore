@@ -6,3 +6,7 @@
 "*.pdf" 
 "__pycache__/" 
 ".ipynb_checkpoints/" 
+data/census_income_additional_info.pdf
+*.csv
+notebooks/.ipynb_checkpoints/eda-checkpoint.ipynb
+notebooks/.ipynb_checkpoints/Modeling-checkpoint.ipynb
