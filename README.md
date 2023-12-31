@@ -48,6 +48,17 @@ This will set up the required dependencies for the project.
    conda activate income-prediction-env
 
 
+4. To run the code two approaches can be taken:
+
+Jupyter notebooks for stakeholder presentation can be found as:
+- **`notebooks/eda.ipynb`:** Jupyter notebooks detailing the data exploration.
+- **`notebooks/modeling.ipynb`:** Jupyter notebooks detailing the preprocessing, and model training processes.
+
+python scripts to run the code end to end under **`src/`:**.
+- **`src/train_and_evaluate.py`:** the python script to run the train and evaluation end to end and save model as a pkl file
+- **`src/predict.py`:** the python script to run the prediction end to end and save results under **`results/`:**.
+
+Config file which contains results from the eda step can be found under **`src/config.json`:**.
 ## Next Steps
 
 The following steps outline the project's progression:
