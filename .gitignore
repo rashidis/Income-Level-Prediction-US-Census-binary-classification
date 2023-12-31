@@ -1,0 +1,8 @@
+"*.pyc" 
+"*.pyo" 
+"*.pyd" 
+"*.txt" 
+"*.csv" 
+"*.pdf" 
+"__pycache__/" 
+".ipynb_checkpoints/" 
