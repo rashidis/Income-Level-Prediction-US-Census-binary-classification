@@ -10,3 +10,4 @@ data/census_income_additional_info.pdf
 *.csv
 notebooks/.ipynb_checkpoints/eda-checkpoint.ipynb
 notebooks/.ipynb_checkpoints/Modeling-checkpoint.ipynb
+src/__pycache__/preprocessing.cpython-39.pyc
