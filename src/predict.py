@@ -14,7 +14,7 @@ if __name__ == "__main__":
     with open("./config.json", 'r') as json_file:
         config = json.load(json_file)
     
-    val_file_path = config['train_file_path']
+    val_file_path = config['val_file_path']
     numerical_features = config['numerical_features']
     cols2drop = config['cols2drop']
     unknown_values = config['unknown_values']
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     plt.savefig(f'../results/val_force_plot_class{class_index}_index{data_index}.png')
     
     # Save results
-    if 'incom' in df_val.columns:  # if the dataset is a validation dataset
+    if 'income' in df_val.columns:  # if the dataset is a validation dataset
         print("\nClassification Report:\n", classification_report(y, y_pred_val))
         with open('../results/val_classification_report.txt', 'w') as output_file:
             output_file.write(str(classification_report(y, y_pred_val)))
@@ -70,5 +70,3 @@ if __name__ == "__main__":
         
     X['preds'] = y_pred_val
     X.to_csv('../results/prediction_results.csv', index=False)
-    
-
